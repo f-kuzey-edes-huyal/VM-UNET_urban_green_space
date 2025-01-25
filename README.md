@@ -20,5 +20,5 @@ This repository shares my progress, code, and challenges during the VM-UNet impl
 
 | Task                 | Progress                                                                                     |
 |----------------------|----------------------------------------------------------------------------------------------|
-| **Image Augmentations**| Research and discussions completed; feedback from Isabelle and Dorothea included.          |
+| **Image Augmentations**| Research and discussions completed; feedback from Isabelle and Dorothea included.???       |
 
