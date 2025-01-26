@@ -46,6 +46,15 @@ File "/mnt/d/VM-UNet/models/vmunet/vmamba.py", line 468, in forward
 RuntimeError: shape '[1, 64, 64, -1]' is invalid for input of size 762048
  ```
 
+__Error__ 
+
+```
+ File "/mnt/d/VM-UNet/datasets/dataset_omdena.py", line 54, in __getitem__
+    raise ValueError(f"Expected image with 12 channels, but got {img.shape[0]} channels: {img_path}")
+ValueError: Expected image with 12 channels, but got 19 channels: ./data/omdena/train/images/VBWVA_2016_208_2_GeoTIFF.tif
+```
+
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
