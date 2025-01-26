@@ -36,6 +36,12 @@ Now, I aim to try two approaches:
   
 I hope solving this issue won’t take too much effort.
 
+__Error__ I tried discarding the initialization with pretrained weights, but I encountered the error shown below.
+
+ ``` File "/mnt/d/VM-UNet/models/vmunet/vmamba.py", line 468, in forward
+    y = torch.transpose(y, dim0=1, dim1=2).contiguous().view(B, H, W, -1)
+RuntimeError: shape '[1, 64, 64, -1]' is invalid for input of size 762048 ```
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
