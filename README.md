@@ -59,6 +59,12 @@ __Error__
 RuntimeError: stack expects each tensor to be equal size, but got [132, 128, 128] at entry 0 and [133, 128, 128] at entry 1
 ```
 
+I think there might be inconsistencies in the dataset! I initially updated the code for 12 channels but noticed that the recent images have 19 channels. I asked Dorothea about this, and she confirmed the issue. Here’s the note from Dorothea:
+
+'@Kuzey Edes
+That is correct—I forgot to specify which bands should be downloaded, so everything was downloaded. The code will be uploaded to DagsHub soon. According to ChatGPT, please ignore bands 13–19.'
+
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
