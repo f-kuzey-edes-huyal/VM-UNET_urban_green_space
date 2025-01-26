@@ -27,3 +27,11 @@ RuntimeError: Error(s) in loading state_dict for VSSM:
         size mismatch for patch_embed.proj.weight: copying a param with shape torch.Size([96, 3, 4, 4]) from checkpoint, the shape in current model is torch.Size([96, 12, 4, 4]).
 ```
 
+I think the problem is caused by the channel size of the pre-trained weights. GeoTIFF images contain 12 channels, while the pre-trained weights are designed for 3 channels. Before identifying the root cause of the issue, I made several changes to dataset.py, vmamba.py, vmunet.py, and configs.py. Unfortunately, these changes did not resolve the problem.
+
+Now, I aim to try two approaches:
+
+- Remove the pre-trained weights and start again.
+- Reshape the pre-trained weights to match the 12-channel input and try again.
+  
+I hope solving this issue won’t take too much effort.
