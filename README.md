@@ -35,3 +35,7 @@ Now, I aim to try two approaches:
 - Reshape the pre-trained weights to match the 12-channel input and try again.
   
 I hope solving this issue won’t take too much effort.
+
+## Notes
+
+[An app to draw architectures ](https://app.diagrams.net/)
