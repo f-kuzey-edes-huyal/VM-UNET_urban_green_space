@@ -53,7 +53,11 @@ __Error__
     raise ValueError(f"Expected image with 12 channels, but got {img.shape[0]} channels: {img_path}")
 ValueError: Expected image with 12 channels, but got 19 channels: ./data/omdena/train/images/VBWVA_2016_208_2_GeoTIFF.tif
 ```
+__Error__
 
+```
+RuntimeError: stack expects each tensor to be equal size, but got [132, 128, 128] at entry 0 and [133, 128, 128] at entry 1
+```
 
 ## Notes
 
