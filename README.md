@@ -22,8 +22,8 @@ This repository shares my progress, code, and challenges during the VM-UNet impl
 |----------------------|----------------------------------------------------------------------------------------------|
 | **Image Augmentations**| Research and discussions completed; feedback from Isabelle and Dorothea included.???       |
 
-
-
-```RuntimeError: Error(s) in loading state_dict for VSSM:
+```
+RuntimeError: Error(s) in loading state_dict for VSSM:
         size mismatch for patch_embed.proj.weight: copying a param with shape torch.Size([96, 3, 4, 4]) from checkpoint, the shape in current model is torch.Size([96, 12, 4, 4]).
 ```
+
