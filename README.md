@@ -23,7 +23,8 @@ This repository shares my progress, code, and challenges during the VM-UNet impl
 | **Image Augmentations**| Research and discussions completed; feedback from Isabelle and Dorothea included.???       |
 
 
-```RuntimeError: Error(s) in loading state_dict for VSSM:
+```
+RuntimeError: Error(s) in loading state_dict for VSSM:
         size mismatch for patch_embed.proj.weight: copying a param with shape torch.Size([96, 3, 4, 4]) from checkpoint, the shape in current model is torch.Size([96, 12, 4, 4]).```
 
 I think the problem is caused by the channel size of the pre-trained weights. GeoTIFF images contain 12 channels, while the pre-trained weights are designed for 3 channels. Before identifying the root cause of the issue, I made several changes to dataset.py, vmamba.py, vmunet.py, and configs.py. Unfortunately, these changes did not resolve the problem.
@@ -37,7 +38,8 @@ I hope solving this issue won’t take too much effort.
 
 __Error__ I tried discarding the initialization with pretrained weights, but I encountered the error shown below.
 
- ``` File "/mnt/d/VM-UNet/models/vmunet/vmamba.py", line 468, in forward
+ ```
+File "/mnt/d/VM-UNet/models/vmunet/vmamba.py", line 468, in forward
     y = torch.transpose(y, dim0=1, dim1=2).contiguous().view(B, H, W, -1)
 RuntimeError: shape '[1, 64, 64, -1]' is invalid for input of size 762048```
 
