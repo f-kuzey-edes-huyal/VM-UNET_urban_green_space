@@ -60,6 +60,9 @@ RuntimeError: stack expects each tensor to be equal size, but got [132, 128, 128
 ```
 
 I think there might be inconsistencies in the dataset! I initially updated the code for 12 channels but noticed that the recent images have 19 channels. I asked Dorothea about this, and she confirmed the issue. 
+
+[](https://stackoverflow.com/questions/71011333/runtimeerror-stack-expects-each-tensor-to-be-equal-size-but-got-7-768-at-en)
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
