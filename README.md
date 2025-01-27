@@ -65,6 +65,8 @@ I think there might be inconsistencies in the dataset! I initially updated the c
 
 After many errors, I finally managed to run the code on a small subset of Omdena images! Can someone congratulate me? 😊
 
+
+![](https://github.com/f-kuzey-edes-huyal/VM-UNET_urban_green_space/blob/main/running_code_for_omdena.png)
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
