@@ -63,6 +63,8 @@ I think there might be inconsistencies in the dataset! I initially updated the c
 
 [] (https://stackoverflow.com/questions/71011333/runtimeerror-stack-expects-each-tensor-to-be-equal-size-but-got-7-768-at-en)
 
+After many errors, I finally managed to run the code on a small subset of Omdena images! Can someone congratulate me? 😊
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
