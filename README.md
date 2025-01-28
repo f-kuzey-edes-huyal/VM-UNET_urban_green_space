@@ -70,3 +70,5 @@ After many errors, I finally managed to run the code on a small subset of Omdena
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
+
+[Cleaned data set](https://dagshub.com/Omdena/FrankfurtGermanyChapter_UrbanGreenSpaceMappping/src/main/MULC)
