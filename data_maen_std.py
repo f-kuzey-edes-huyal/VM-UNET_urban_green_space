@@ -40,8 +40,8 @@ def process_geotiff_folder(folder_path, target_size=(128, 128), channels_to_use=
                 # Create a tensor by stacking the channels along the second dimension (channel axis)
                 image_tensor = torch.tensor(image)  # Shape: [C, H, W]
 
-                # Normalize the image to [0, 1]
-                image_tensor = image_tensor / 255.0  # Normalize to range [0, 1]
+                # REMOVE normalization (No division by 255.0)
+                # image_tensor = image_tensor / 255.0  # This line is REMOVED
 
                 # Resize and crop each channel
                 all_resized_channels = []
@@ -49,7 +49,9 @@ def process_geotiff_folder(folder_path, target_size=(128, 128), channels_to_use=
                     channel_image = Image.fromarray(image[c])  # Convert channel to PIL image
                     cropped_image = crop_center(channel_image, size=target_size)
                     resized_image = resize_image(cropped_image, size=target_size)
-                    resized_tensor = torch.tensor(np.array(resized_image)).float() / 255.0
+
+                    # Convert back to tensor (without dividing by 255)
+                    resized_tensor = torch.tensor(np.array(resized_image)).float()
                     all_resized_channels.append(resized_tensor)
 
                 # Stack all channels along the first dimension (channel axis)
@@ -98,7 +100,6 @@ def calculate_mean_std_of_channels(images_tensor, channels_to_use=12):
     std_all_channels = flattened_tensor.std()    # Single std across all pixels
 
     return mean_channels, std_channels, mean_all_channels, std_all_channels
-
 
 def process_multiple_folders(folders, target_size=(128, 128), channels_to_use=12):
     """Process GeoTIFF images from multiple folders and return combined tensor of all images."""
