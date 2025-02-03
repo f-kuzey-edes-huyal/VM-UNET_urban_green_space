@@ -81,7 +81,7 @@ Test Results:
 
 Initially, I trained the model by assigning both loss function components (categorical cross-entropy and dice loss) equal weights of 1. However, I noticed increasing loss values, which indicated a class imbalance issue. To address this, I adjusted the weights to 0.3 for cross-entropy and 0.7 for dice loss, aiming to improve class balance handling.
 
-The training process suggested in the referenced article is slightly different, as they use CosineAnnealingLR instead of a fixed learning rate. This scheduling method starts with a higher learning rate and gradually decreases it over time. You can read more about it here.
+The training process suggested in the referenced article is slightly different, as they use CosineAnnealingLR instead of a fixed learning rate. This scheduling method starts with a higher learning rate and gradually decreases it over time. You can read more about it [here](https://wiki.cloudfactory.com/docs/mp-wiki/scheduler/cosineannealinglr).
 
 Since I also implemented early stopping, my training stopped at epoch 5, but I don’t think setting patience to 5 was the most reasonable choice for this type of training.
 
