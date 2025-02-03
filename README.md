@@ -67,6 +67,31 @@ After many errors, I finally managed to run the code on a small subset of Omdena
 
 
 ![](https://github.com/f-kuzey-edes-huyal/VM-UNET_urban_green_space/blob/main/running_code_for_omdena.png)
+
+
+__Struggles, struggles, struggles!___ My initial segmentation attempts resulted in very poor performance:
+
+Test Results:
+
+- Mean IoU: 0.0905
+- Mean F1 Score: 0.1623
+- Mean Accuracy: 0.6834
+- Mean Specificity: 0.7999
+- Mean Sensitivity: 0.1995
+
+Initially, I trained the model by assigning both loss function components (categorical cross-entropy and dice loss) equal weights of 1. However, I noticed increasing loss values, which indicated a class imbalance issue. To address this, I adjusted the weights to 0.3 for cross-entropy and 0.7 for dice loss, aiming to improve class balance handling.
+
+The training process suggested in the referenced article is slightly different, as they use CosineAnnealingLR instead of a fixed learning rate. This scheduling method starts with a higher learning rate and gradually decreases it over time. You can read more about it here.
+
+Since I also implemented early stopping, my training stopped at epoch 5, but I don’t think setting patience to 5 was the most reasonable choice for this type of training.
+
+My Next Steps:
+
+- Clean the dataset initially.
+- Train using a fixed learning rate (e.g., lr = 0.01) for 50 epochs with patience set to 5.
+- Once I finalize the best architecture, I will retrain using CosineAnnealingLR.
+
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
