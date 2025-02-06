@@ -1,0 +1,58 @@
+2025-01-27 15:47:28 - #----------Config info----------#
+2025-01-27 15:47:28 - network: vmunet,
+2025-01-27 15:47:28 - model_config: {'num_classes': 5, 'input_channels': 12, 'depths': [2, 2, 2, 2], 'depths_decoder': [2, 2, 2, 1], 'drop_path_rate': 0.2},
+2025-01-27 15:47:28 - datasets: omdena,
+2025-01-27 15:47:28 - data_path: ./data/omdena/,
+2025-01-27 15:47:28 - criterion: BceDiceLoss_n(
+  (bce): MultiClassBCELoss(
+    (bce_loss): BCEWithLogitsLoss()
+  )
+  (dice): MultiClassDiceLoss()
+),
+2025-01-27 15:47:28 - num_classes: 5,
+2025-01-27 15:47:28 - input_size_h: 128,
+2025-01-27 15:47:28 - input_size_w: 128,
+2025-01-27 15:47:28 - input_channels: 12,
+2025-01-27 15:47:28 - distributed: False,
+2025-01-27 15:47:28 - local_rank: -1,
+2025-01-27 15:47:28 - num_workers: 0,
+2025-01-27 15:47:28 - seed: 42,
+2025-01-27 15:47:28 - world_size: None,
+2025-01-27 15:47:28 - rank: None,
+2025-01-27 15:47:28 - amp: False,
+2025-01-27 15:47:28 - gpu_id: 0,
+2025-01-27 15:47:28 - batch_size: 32,
+2025-01-27 15:47:28 - epochs: 3,
+2025-01-27 15:47:28 - work_dir: results/vmunet_omdena_Monday_27_January_2025_15h_47m_28s/,
+2025-01-27 15:47:28 - print_interval: 20,
+2025-01-27 15:47:28 - val_interval: 30,
+2025-01-27 15:47:28 - save_interval: 100,
+2025-01-27 15:47:28 - threshold: 0.5,
+2025-01-27 15:47:28 - train_transformer: Compose(
+    <utils.myNormalize object at 0x7f2c9e94f850>
+    <utils.myToTensor object at 0x7f2c9e94fc10>
+    <utils.myRandomHorizontalFlip object at 0x7f2c9e94fe20>
+    <utils.myRandomVerticalFlip object at 0x7f2c9e94fe80>
+    <utils.myRandomRotation object at 0x7f2c996ef820>
+    <utils.myCenterCrop object at 0x7f2c99616c40>
+    <utils.myChannelPadding object at 0x7f2c99616dc0>
+    <utils.myResize object at 0x7f2c99616e80>
+),
+2025-01-27 15:47:28 - test_transformer: Compose(
+    <utils.myNormalize object at 0x7f2c995c61c0>
+    <utils.myToTensor object at 0x7f2c995c6ac0>
+    <utils.myCenterCrop object at 0x7f2c995c69d0>
+    <utils.myChannelPadding object at 0x7f2c99595a90>
+    <utils.myResize object at 0x7f2c99595b20>
+),
+2025-01-27 15:47:28 - opt: AdamW,
+2025-01-27 15:47:28 - lr: 0.001,
+2025-01-27 15:47:28 - betas: (0.9, 0.999),
+2025-01-27 15:47:28 - eps: 1e-08,
+2025-01-27 15:47:28 - weight_decay: 0.01,
+2025-01-27 15:47:28 - amsgrad: False,
+2025-01-27 15:47:28 - sch: CosineAnnealingLR,
+2025-01-27 15:47:28 - T_max: 50,
+2025-01-27 15:47:28 - eta_min: 1e-05,
+2025-01-27 15:47:28 - last_epoch: -1,
+2025-01-27 15:47:33 - flops: 4.174774272, params: 22.051661, Total params: : 27.4415

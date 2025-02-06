@@ -1,0 +1,54 @@
+2025-01-26 14:46:37 - #----------Config info----------#
+2025-01-26 14:46:37 - network: vmunet,
+2025-01-26 14:46:37 - model_config: {'num_classes': 5, 'input_channels': 12, 'depths': [2, 2, 2, 2], 'depths_decoder': [2, 2, 2, 1], 'drop_path_rate': 0.2, 'load_ckpt_path': './pre_trained_weights/vmamba_small_e238_ema.pth'},
+2025-01-26 14:46:37 - datasets: omdena,
+2025-01-26 14:46:37 - data_path: ./data/omdena/,
+2025-01-26 14:46:37 - criterion: BceDiceLoss(
+  (bce): BCELoss(
+    (bceloss): BCELoss()
+  )
+  (dice): DiceLoss()
+),
+2025-01-26 14:46:37 - pretrained_path: ./pre_trained/,
+2025-01-26 14:46:37 - num_classes: 5,
+2025-01-26 14:46:37 - input_size_h: 128,
+2025-01-26 14:46:37 - input_size_w: 128,
+2025-01-26 14:46:37 - input_channels: 12,
+2025-01-26 14:46:37 - distributed: False,
+2025-01-26 14:46:37 - local_rank: -1,
+2025-01-26 14:46:37 - num_workers: 0,
+2025-01-26 14:46:37 - seed: 42,
+2025-01-26 14:46:37 - world_size: None,
+2025-01-26 14:46:37 - rank: None,
+2025-01-26 14:46:37 - amp: False,
+2025-01-26 14:46:37 - gpu_id: 0,
+2025-01-26 14:46:37 - batch_size: 32,
+2025-01-26 14:46:37 - epochs: 3,
+2025-01-26 14:46:37 - work_dir: results/vmunet_omdena_Sunday_26_January_2025_14h_46m_37s/,
+2025-01-26 14:46:37 - print_interval: 20,
+2025-01-26 14:46:37 - val_interval: 30,
+2025-01-26 14:46:37 - save_interval: 100,
+2025-01-26 14:46:37 - threshold: 0.5,
+2025-01-26 14:46:37 - train_transformer: Compose(
+    <utils.myNormalize object at 0x7fed0a900a90>
+    <utils.myToTensor object at 0x7fed0a900ac0>
+    <utils.myRandomHorizontalFlip object at 0x7fed033698e0>
+    <utils.myRandomVerticalFlip object at 0x7fed03369940>
+    <utils.myRandomRotation object at 0x7fed033699a0>
+    <utils.myResize object at 0x7fed03303f70>
+),
+2025-01-26 14:46:37 - test_transformer: Compose(
+    <utils.myNormalize object at 0x7fed03319c40>
+    <utils.myToTensor object at 0x7fed03319bb0>
+    <utils.myResize object at 0x7fed03319ac0>
+),
+2025-01-26 14:46:37 - opt: AdamW,
+2025-01-26 14:46:37 - lr: 0.001,
+2025-01-26 14:46:37 - betas: (0.9, 0.999),
+2025-01-26 14:46:37 - eps: 1e-08,
+2025-01-26 14:46:37 - weight_decay: 0.01,
+2025-01-26 14:46:37 - amsgrad: False,
+2025-01-26 14:46:37 - sch: CosineAnnealingLR,
+2025-01-26 14:46:37 - T_max: 50,
+2025-01-26 14:46:37 - eta_min: 1e-05,
+2025-01-26 14:46:37 - last_epoch: -1,

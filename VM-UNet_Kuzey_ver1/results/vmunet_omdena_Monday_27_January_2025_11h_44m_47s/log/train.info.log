@@ -1,0 +1,54 @@
+2025-01-27 11:44:47 - #----------Config info----------#
+2025-01-27 11:44:47 - network: vmunet,
+2025-01-27 11:44:47 - model_config: {'num_classes': 5, 'input_channels': 12, 'depths': [2, 2, 2, 2], 'depths_decoder': [2, 2, 2, 1], 'drop_path_rate': 0.2},
+2025-01-27 11:44:47 - datasets: omdena,
+2025-01-27 11:44:47 - data_path: ./data/omdena/,
+2025-01-27 11:44:47 - criterion: BceDiceLoss(
+  (bce): BCELoss(
+    (bceloss): BCELoss()
+  )
+  (dice): DiceLoss()
+),
+2025-01-27 11:44:47 - num_classes: 5,
+2025-01-27 11:44:47 - input_size_h: 128,
+2025-01-27 11:44:47 - input_size_w: 128,
+2025-01-27 11:44:47 - input_channels: 12,
+2025-01-27 11:44:47 - distributed: False,
+2025-01-27 11:44:47 - local_rank: -1,
+2025-01-27 11:44:47 - num_workers: 0,
+2025-01-27 11:44:47 - seed: 42,
+2025-01-27 11:44:47 - world_size: None,
+2025-01-27 11:44:47 - rank: None,
+2025-01-27 11:44:47 - amp: False,
+2025-01-27 11:44:47 - gpu_id: 0,
+2025-01-27 11:44:47 - batch_size: 32,
+2025-01-27 11:44:47 - epochs: 3,
+2025-01-27 11:44:47 - work_dir: results/vmunet_omdena_Monday_27_January_2025_11h_44m_47s/,
+2025-01-27 11:44:47 - print_interval: 20,
+2025-01-27 11:44:47 - val_interval: 30,
+2025-01-27 11:44:47 - save_interval: 100,
+2025-01-27 11:44:47 - threshold: 0.5,
+2025-01-27 11:44:47 - train_transformer: Compose(
+    <utils.myNormalize object at 0x7f578134f760>
+    <utils.myToTensor object at 0x7f577be2e4f0>
+    <utils.myRandomHorizontalFlip object at 0x7f577be2e520>
+    <utils.myRandomVerticalFlip object at 0x7f577be2e580>
+    <utils.myRandomRotation object at 0x7f5779d47bb0>
+    <utils.myResize object at 0x7f5779d47b50>
+),
+2025-01-27 11:44:47 - test_transformer: Compose(
+    <utils.myNormalize object at 0x7f5779cbf7c0>
+    <utils.myToTensor object at 0x7f5779cbf700>
+    <utils.myResize object at 0x7f5779c8f640>
+),
+2025-01-27 11:44:47 - opt: AdamW,
+2025-01-27 11:44:47 - lr: 0.001,
+2025-01-27 11:44:47 - betas: (0.9, 0.999),
+2025-01-27 11:44:47 - eps: 1e-08,
+2025-01-27 11:44:47 - weight_decay: 0.01,
+2025-01-27 11:44:47 - amsgrad: False,
+2025-01-27 11:44:47 - sch: CosineAnnealingLR,
+2025-01-27 11:44:47 - T_max: 50,
+2025-01-27 11:44:47 - eta_min: 1e-05,
+2025-01-27 11:44:47 - last_epoch: -1,
+2025-01-27 11:44:53 - flops: 4.174774272, params: 22.051661, Total params: : 27.4415
