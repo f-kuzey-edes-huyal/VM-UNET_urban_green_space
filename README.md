@@ -97,6 +97,16 @@ Then, upon reviewing my approach, I noticed two errors. First, there was an issu
 
 However, the main issue was not normalization. My biggest mistake was forgetting to binarize the mask, I believe. The algorithm is now running, and while the validation loss still oscillates, the training loss continues to decrease, which was not the case in previous experiments.
 
+
+
+__February 7, 2025:__ 
+
+I was expecting to get my results after coming back from shopping, but when I checked, I saw that my GPU had suddenly stopped running. I faced an issue similar to the one I mentioned earlier. I feel so disappointed because I was hoping to see some improvements in my results.
+
+One thing I didn’t like about my training process is that the training loss started increasing again, even though the validation loss showed some stable behavior, which wasn’t the case in the initial steps.
+
+By the way, why does a GPU stop running suddenly? Could it be due to overheating or something else?
+
 [initialization problems ???](https://stackoverflow.com/questions/55171799/training-loss-decrease-at-first-several-epochs-but-jump-to-a-high-value-suddenly)
 
 
