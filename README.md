@@ -97,6 +97,8 @@ Then, upon reviewing my approach, I noticed two errors. First, there was an issu
 
 However, the main issue was not normalization. My biggest mistake was forgetting to binarize the mask, I believe. The algorithm is now running, and while the validation loss still oscillates, the training loss continues to decrease, which was not the case in previous experiments.
 
+[initialization problems ???](https://stackoverflow.com/questions/55171799/training-loss-decrease-at-first-several-epochs-but-jump-to-a-high-value-suddenly)
+
 
 ## Notes
 
