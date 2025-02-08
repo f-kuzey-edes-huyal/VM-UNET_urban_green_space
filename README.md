@@ -91,6 +91,24 @@ My Next Steps:
 - Train using a fixed learning rate (e.g., lr = 0.01) for 50 epochs with patience set to 5.
 - Once I finalize the best architecture, I will retrain using CosineAnnealingLR.
 
+__February 6, 2025:__ The previous days were painful because my training loss started to increase after a few epochs. I experimented with different loss functions—Dice loss, cross-entropy, and a smoothed version combining both. I also adjusted the learning rate algorithm, but none of these changes helped.
+
+Then, upon reviewing my approach, I noticed two errors. First, there was an issue with the normalization of the TIFF files—I had divided by 255 when calculating the mean, which was not suitable for them (thanks to Marius Hamacher for discussing the .tif files with me). Additionally, I decided to normalize each image channel-wise instead of using a single mean, as the paper suggested.
+
+However, the main issue was not normalization. My biggest mistake was forgetting to binarize the mask, I believe. The algorithm is now running, and while the validation loss still oscillates, the training loss continues to decrease, which was not the case in previous experiments.
+
+
+
+__February 7, 2025:__ 
+
+I was expecting to get my results after coming back from shopping, but when I checked, I saw that my GPU had suddenly stopped running. I faced an issue similar to the one I mentioned earlier. I feel so disappointed because I was hoping to see some improvements in my results.
+
+One thing I didn’t like about my training process is that the training loss started increasing again, even though the validation loss showed some stable behavior, which wasn’t the case in the initial steps.
+
+By the way, why does a GPU stop running suddenly? Could it be due to overheating or something else?
+
+[initialization problems ???](https://stackoverflow.com/questions/55171799/training-loss-decrease-at-first-several-epochs-but-jump-to-a-high-value-suddenly)
+
 
 ## Notes
 
