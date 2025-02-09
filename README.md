@@ -109,7 +109,7 @@ By the way, why does a GPU stop running suddenly? Could it be due to overheating
 
 [initialization problems ???](https://stackoverflow.com/questions/55171799/training-loss-decrease-at-first-several-epochs-but-jump-to-a-high-value-suddenly)
 
-[](https://datascience.stackexchange.com/questions/105031/why-is-my-training-loss-not-changing)
+[class imbalance ???](https://datascience.stackexchange.com/questions/105031/why-is-my-training-loss-not-changing)
 
 
 ## Notes
