@@ -121,6 +121,14 @@ __February 12, 2025__
 
 ✅ To-Do List for Code Corrections:
  - Recalculate Mean and Standard Deviation for the cleaned dataset.
+```
+Mean of each channel: tensor([1246.4872, 1049.9016, 1010.0692,  878.8740, 1125.1187, 2105.3875,
+        2552.0520, 2452.0959, 2758.8291,  687.0012,    9.6040, 1725.2911])
+Standard Deviation of each channel: tensor([ 497.1459,  553.8893,  571.6847,  676.8869,  623.9463,  923.2581,
+        1142.2109, 1161.6038, 1253.5480,  350.6316,    3.7974,  859.2806])
+Overall Mean of all channels: tensor(1466.7261)
+Overall Standard Deviation of all channels: tensor(1139.6169)```
+
  - Decrease the Number of Parameters (undo the 2x increase while maintaining model efficiency).
  - Remove Augmented Data (exclude NPY_datasets2).
  - Replace SiLU Activation with GELU and test another activation function.
