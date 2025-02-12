@@ -119,6 +119,15 @@ Class Weights: [0.02490574 0.02985331 0.02236549 0.13309433 0.78978115]
 
 __February 12, 2025__
 
+✅ To-Do List for Code Corrections:
+ - Recalculate Mean and Standard Deviation for the cleaned dataset.
+ - Decrease the Number of Parameters (undo the 2x increase while maintaining model efficiency).
+ - Remove Augmented Data (exclude NPY_datasets2).
+ - Replace SiLU Activation with GELU and test another activation function.
+ - Train for 50 Epochs with Early Stopping (Patience = 5).
+ - Check If Training Stops Correctly (if not, inspect data handling).
+ - Analyze and Write About the Results (performance, issues, observations).
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
