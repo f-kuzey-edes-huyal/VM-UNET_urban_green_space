@@ -112,10 +112,12 @@ By the way, why does a GPU stop running suddenly? Could it be due to overheating
 [class imbalance ???](https://datascience.stackexchange.com/questions/105031/why-is-my-training-loss-not-changing)
 
 __February 10, 2025__
-````
+```
 Pixel Counts per Class: [17208184. 14356287. 19162672.  3220142.   542660.]
 Class Weights: [0.02490574 0.02985331 0.02236549 0.13309433 0.78978115]
 ```
+
+__February 12, 2025__
 
 ## Notes
 
