@@ -138,6 +138,10 @@ Overall Standard Deviation of all channels: tensor(1139.6169)
  - Check If Training Stops Correctly (if not, inspect data handling).
  - Analyze and Write About the Results (performance, issues, observations).
 
+__February 13 2025__
+
+I made so many adjustments, but the problem still exists. I think mixed pixels might be the issue. I will try to address this problem by adjusting the mask values. I will examine the mask values, and if a pixel seems to belong to two or more classes, I will assign it to the majority class and ensure that the sum of probabilities across the 5 channels is 1 for each pixel. I am not sure if this approach will help, but I will give it a try.
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
