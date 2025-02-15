@@ -112,10 +112,35 @@ By the way, why does a GPU stop running suddenly? Could it be due to overheating
 [class imbalance ???](https://datascience.stackexchange.com/questions/105031/why-is-my-training-loss-not-changing)
 
 __February 10, 2025__
-````
+```
 Pixel Counts per Class: [17208184. 14356287. 19162672.  3220142.   542660.]
 Class Weights: [0.02490574 0.02985331 0.02236549 0.13309433 0.78978115]
 ```
+
+__February 12, 2025__
+
+✅ To-Do List for Code Corrections:
+ - Recalculate Mean and Standard Deviation for the cleaned dataset.
+
+```
+Mean of each channel: tensor([1246.4872, 1049.9016, 1010.0692,  878.8740, 1125.1187, 2105.3875,
+        2552.0520, 2452.0959, 2758.8291,  687.0012,    9.6040, 1725.2911])
+Standard Deviation of each channel: tensor([ 497.1459,  553.8893,  571.6847,  676.8869,  623.9463,  923.2581,
+        1142.2109, 1161.6038, 1253.5480,  350.6316,    3.7974,  859.2806])
+Overall Mean of all channels: tensor(1466.7261)
+Overall Standard Deviation of all channels: tensor(1139.6169)
+```
+
+ - Decrease the Number of Parameters (undo the 2x increase while maintaining model efficiency).
+ - Remove Augmented Data (exclude NPY_datasets2).
+ - Replace SiLU Activation with GELU and test another activation function.
+ - Train for 50 Epochs with Early Stopping (Patience = 5).
+ - Check If Training Stops Correctly (if not, inspect data handling).
+ - Analyze and Write About the Results (performance, issues, observations).
+
+__February 13 2025__
+
+I made so many adjustments, but the problem still exists. I think mixed pixels might be the issue. I will try to address this problem by adjusting the mask values. I will examine the mask values, and if a pixel seems to belong to two or more classes, I will assign it to the majority class and ensure that the sum of probabilities across the 5 channels is 1 for each pixel. I am not sure if this approach will help, but I will give it a try.
 
 ## Notes
 
