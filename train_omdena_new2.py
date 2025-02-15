@@ -7,8 +7,9 @@ import warnings
 
 from datasets.dataset_omdena import NPY_datasets, NPY_datasets2
 from tensorboardX import SummaryWriter
-from models.vmunet.vmunet_omdena import VMUNet
-from engine import train_one_epoch, val_one_epoch, test_one_epoch
+from models.vmunet.vmunet import VMUNet
+
+from engine_meww import train_one_epoch, val_one_epoch, test_one_epoch
 from utils import get_logger, set_seed, get_optimizer, get_scheduler, cal_params_flops
 from configs.config_setting_omdena import setting_config
 import torch.backends.cudnn as cudnn
@@ -37,10 +38,10 @@ def main(config):
 
     print('#----------Preparing Dataset----------#')
     train_dataset = NPY_datasets(config.data_path, config, train=True)
-    train_dataset2 = NPY_datasets2(config.data_path, config, train=True)
-    train_dataset_new = ConcatDataset([train_dataset, train_dataset2])
+    #train_dataset2 = NPY_datasets2(config.data_path, config, train=True)
+    #train_dataset_new = ConcatDataset([train_dataset, train_dataset2])
 
-    train_loader = DataLoader(train_dataset_new, batch_size=8, shuffle=True, num_workers=config.num_workers, pin_memory=True)
+    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True, num_workers=config.num_workers, pin_memory=True)
     val_dataset = NPY_datasets(config.data_path, config, train=False)
     val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=config.num_workers, pin_memory=True, drop_last=True)
 
