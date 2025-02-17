@@ -146,14 +146,12 @@ __February 17 2025__
 
 Zoran Radovanovic and Marius Hamacher shared that they have a similar issue to mine. As discussed in the project meeting, I will try to reduce the problem to a binary classification: trees versus all (possibly a low vegetation versus all problem).
 
-"""
-Mean of each channel: tensor([1245.0645, 1049.0349, 1009.9710,  879.5040, 1125.7018, 2106.4487,
+"""Mean of each channel: tensor([1245.0645, 1049.0349, 1009.9710,  879.5040, 1125.7018, 2106.4487,
         2554.2410, 2454.0356, 2761.1414,  686.4368,    9.6029, 1727.0878])
 Standard Deviation of each channel: tensor([ 497.6835,  554.0525,  571.9024,  677.2979,  624.4200,  925.6243,
         1145.3727, 1164.2604, 1256.9514,  352.7239,    3.8082,  860.2465])
 Overall Mean of all channels: tensor(1467.3558)
-Overall Standard Deviation of all channels: tensor(1141.4292)
-"""
+Overall Standard Deviation of all channels: tensor(1141.4292)"""
 
 ## Notes
 
