@@ -151,7 +151,8 @@ Zoran Radovanovic and Marius Hamacher shared that they have a similar issue to m
 Standard Deviation of each channel: tensor([ 497.6835,  554.0525,  571.9024,  677.2979,  624.4200,  925.6243,
         1145.3727, 1164.2604, 1256.9514,  352.7239,    3.8082,  860.2465])
 Overall Mean of all channels: tensor(1467.3558)
-Overall Standard Deviation of all channels: tensor(1141.4292)"""
+Overall Standard Deviation of all channels: tensor(1141.4292)
+"""
 
 ## Notes
 
