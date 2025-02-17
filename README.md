@@ -163,7 +163,8 @@ __Trees__ Class Weights : [0.5424329055758904, 1.8435459754017673]
 
 __Water__ Class Weights : [0.06280778112742051, 15.921594140874559]
 
-__Clutter__ Class Weights (for BCE): [0.010059080647556513, 99.41266354605202]
+__Clutter__ Class Weights : [0.010059080647556513, 99.41266354605202]
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
