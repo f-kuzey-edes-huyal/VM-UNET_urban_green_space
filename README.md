@@ -154,7 +154,12 @@ Standard Deviation of each channel: tensor([ 497.6835,  554.0525,  571.9024,  67
 Overall Mean of all channels: tensor(1467.3558)
 Overall Standard Deviation of all channels: tensor(1141.4292)
 ```
-__Trees:__ Class Weights (for BCE): [0.5424329055758904, 1.8435459754017673] 
+
+__Impervious Surfaces__ Class Weights : [0.4615709129611783, 2.1665143359759824]
+__Low Vegetation__ Class Weights : [0.35771197879364625, 2.795545185185919]
+__Trees__ Class Weights : [0.5424329055758904, 1.8435459754017673] 
+__Water__ Class Weights : [0.06280778112742051, 15.921594140874559]
+__Clutter__ 
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
