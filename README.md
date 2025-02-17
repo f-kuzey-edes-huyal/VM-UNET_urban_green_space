@@ -143,6 +143,7 @@ __February 13 2025__
 I made so many adjustments, but the problem still exists. I think mixed pixels might be the issue. I will try to address this problem by adjusting the mask values. I will examine the mask values, and if a pixel seems to belong to two or more classes, I will assign it to the majority class and ensure that the sum of probabilities across the 5 channels is 1 for each pixel. I am not sure if this approach will help, but I will give it a try.
 
 __February 17 2025__
+
 Zoran Radovanovic and Marius Hamacher shared that they have a similar issue to mine. As discussed in the project meeting, I will try to reduce the problem to a binary classification: trees versus all (possibly a low vegetation versus all problem).
 
 ## Notes
