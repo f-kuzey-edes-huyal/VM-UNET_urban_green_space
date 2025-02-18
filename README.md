@@ -165,6 +165,8 @@ __Water__ Class Weights : [0.06280778112742051, 15.921594140874559]
 
 __Clutter__ Class Weights : [0.010059080647556513, 99.41266354605202]
 
+Test Results -> Mean IoU: 0.0350, Mean F1 Score: 0.0677, Mean Accuracy: 0.8220, Mean Specificity: 0.9807, Mean Sensitivity: 0.0384 (weıgted cross=
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
