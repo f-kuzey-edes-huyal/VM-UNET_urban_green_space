@@ -167,6 +167,8 @@ __Clutter__ Class Weights : [0.010059080647556513, 99.41266354605202]
 
 Test Results -> Mean IoU: 0.0350, Mean F1 Score: 0.0677, Mean Accuracy: 0.8220, Mean Specificity: 0.9807, Mean Sensitivity: 0.0384 (weıgted cross Ç>0.5)
 
+Test Results -> Mean IoU: 0.5646, Mean F1 Score: 0.7217, Mean Accuracy: 0.5646, Mean Specificity: 0.0000, Mean Sensitivity: 1.0000 (argmax)
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
