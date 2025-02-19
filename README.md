@@ -169,6 +169,24 @@ Test Results -> Mean IoU: 0.0350, Mean F1 Score: 0.0677, Mean Accuracy: 0.8220, 
 
 Test Results -> Mean IoU: 0.5646, Mean F1 Score: 0.7217, Mean Accuracy: 0.5646, Mean Specificity: 0.0000, Mean Sensitivity: 1.0000 (argmax) 1 epoch trial
 
+__Summary__
+
+- I have calculated the mean and standard deviation for both the 19 individual channels of the images and the entire images.
+- I checked the performance of using channel-wise mean-standard deviation versus whole-image mean-standard deviation but did not observe a significant improvement in multi-class segmentation.
+- My VM-UNet classifier does not seem to be learning, and the loss stops improving after several epochs.
+- I experimented with different learning rates, using 0.001, 0.01, and 0.1.
+- I changed the activation function from SiLU to GELU to see if it made a difference.
+- I switched the learning rate scheduler from CosineAnnealingLR to ReduceLROnPlateau.
+- I used three-channel images with pre-trained VMamba weights for initialization, but this also did not make any difference.
+- I calculated class weights to handle class imbalance.
+- I tried different loss functions, including Cross-Entropy, Weighted Cross-Entropy, Dice Loss, Focal Loss, and a combination of Dice Loss and Cross-Entropy (both with equal weights and also with a weighting of -0.7 for Dice Loss and 0.3 for Cross-Entropy).
+- I simplified the problem to one-versus-all (trees vs. all other classes).
+- I recalculated class weights to address class imbalance and used them with Cross-Entropy Loss, but this did not help.
+- I investigated whether I was making a mistake during image resizing, as incorrect interpolation could affect target labels. I changed the interpolation mode from InterpolationMode.BILINEAR to InterpolationMode.NEAREST, but this also did not result in a meaningful improvement.
+- VM-UNet still does not seem to learn.
+
+
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
