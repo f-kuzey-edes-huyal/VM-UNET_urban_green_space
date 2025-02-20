@@ -194,8 +194,11 @@ Standard Deviation of each channel: tensor([245.8777, 489.7986, 482.8977, 590.62
         910.0814, 848.8351, 672.3589, 505.7607, 564.3876])
 Overall Mean of all channels: tensor(1566.7062)
 Overall Standard Deviation of all channels: tensor(903.7628)
-```
 
+```
+```
+Test Results -> Mean IoU: 0.7641, Mean F1 Score: 0.8663, Mean Accuracy: 0.7641, Mean Specificity: 0.0000, Mean Sensitivity: 1.0000
+```
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
