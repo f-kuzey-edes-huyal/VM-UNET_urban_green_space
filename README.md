@@ -185,7 +185,15 @@ __Summary__
 - I investigated whether I was making a mistake during image resizing, as incorrect interpolation could affect target labels. I changed the interpolation mode from InterpolationMode.BILINEAR to InterpolationMode.NEAREST, but this also did not result in a meaningful improvement.
 - VM-UNet still does not seem to learn.
 
+__Different dataset__
 
+```Mean of each channel: tensor([ 613.2190,  664.5815,  872.7504,  937.2291, 1248.7046, 2018.3363,
+        2251.7087, 2250.5620, 2321.8311, 2339.9089, 1837.2964, 1444.3446])
+Standard Deviation of each channel: tensor([245.8777, 489.7986, 482.8977, 590.6274, 459.5702, 638.2022, 791.4380,
+        910.0814, 848.8351, 672.3589, 505.7607, 564.3876])
+Overall Mean of all channels: tensor(1566.7062)
+Overall Standard Deviation of all channels: tensor(903.7628)
+```
 
 ## Notes
 
