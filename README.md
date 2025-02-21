@@ -205,6 +205,10 @@ Images and masks for index 0 saved successfully as both TIFF and PNG.
  [[ 2884  3772]
  [12100 14012]]
 Test Results -> Mean IoU: 0.4689, Mean F1 Score: 0.6384, Mean Accuracy: 0.5156, Mean Specificity: 0.4333, Mean Sensitivity: 0.5366
+
+ [[ 2992  3664]
+ [12658 13454]]
+Test Results -> Mean IoU: 0.4518, Mean F1 Score: 0.6224, Mean Accuracy: 0.5019, Mean Specificity: 0.4495, Mean Sensitivity: 0.5152
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
