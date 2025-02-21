@@ -199,6 +199,12 @@ Overall Standard Deviation of all channels: tensor(903.7628)
 ```
 Test Results -> Mean IoU: 0.7641, Mean F1 Score: 0.8663, Mean Accuracy: 0.7641, Mean Specificity: 0.0000, Mean Sensitivity: 1.0000
 ```
+
+Images and masks for index 0 saved successfully as both TIFF and PNG.
+100%|█████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  4.68it/s]Confusion Matrix:
+ [[ 2884  3772]
+ [12100 14012]]
+Test Results -> Mean IoU: 0.4689, Mean F1 Score: 0.6384, Mean Accuracy: 0.5156, Mean Specificity: 0.4333, Mean Sensitivity: 0.5366
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
