@@ -209,6 +209,38 @@ Test Results -> Mean IoU: 0.4689, Mean F1 Score: 0.6384, Mean Accuracy: 0.5156, 
  [[ 2992  3664]
  [12658 13454]]
 Test Results -> Mean IoU: 0.4518, Mean F1 Score: 0.6224, Mean Accuracy: 0.5019, Mean Specificity: 0.4495, Mean Sensitivity: 0.5152
+
+__February 21 2025__
+
+I found a dataset on [Zenodo](https://zenodo.org/records/8413116) that contained a single .tif file for images and another for masks. I divided the images into 16 × 16 patches and ran the same experiment, but the results were identical across different  number of epoch runs—the model was not learning. Specifically, I kept getting only white regions, with Mean Specificity: 0.0000. It was the same with my previous experiments.
+Here are the results from that experiment:
+Test Results:
+- Mean IoU: 0.7641
+- Mean F1 Score: 0.8663
+- Mean Accuracy: 0.7641
+- Mean Specificity: 0.0000
+- Mean Sensitivity: 1.0000
+  
+Then, I remembered some [discussions](https://discuss.pytorch.org/t/semantic-segmentation-model-unet-doesnt-learn/52899/2) about the importance of resizing images carefully, as it introduces new values to the targets. Instead of creating 16 × 16 patches, I adjusted the process to create 128 × 128 patches—matching the input size expected by my model. I used six training images and two validation images, and __this time, I noticed that the model was finally learning__. At least, there was some variation between runs.
+Here are the updated results:
+
+__After 100 epochs:__
+= Confusion Matrix: [[ 2884 3772] [12100 14012]]
+- Mean IoU: 0.4689
+- Mean F1 Score: 0.6384
+- Mean Accuracy: 0.5156
+- Mean Specificity: 0.4333
+- Mean Sensitivity: 0.5366
+After 300 epochs:
+Confusion Matrix: [[ 2992 3664] [12658 13454]]
+- Mean IoU: 0.4518
+- Mean F1 Score: 0.6224
+- Mean Accuracy: 0.5019
+- Mean Specificity: 0.4495
+- Mean Sensitivity: 0.5152
+
+While the model still has room for improvement, at least it is showing some learning behavior. Given these findings, I was wondering if there might be an issue with the dataset itself.
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
