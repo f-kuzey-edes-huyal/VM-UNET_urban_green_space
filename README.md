@@ -231,6 +231,7 @@ __After 100 epochs:__
 - Mean Accuracy: 0.5156
 - Mean Specificity: 0.4333
 - Mean Sensitivity: 0.5366
+
 __After 300 epochs:__
 Confusion Matrix: [[ 2992 3664] [12658 13454]]
 - Mean IoU: 0.4518
