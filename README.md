@@ -251,6 +251,7 @@ To separate the training and validation sets, we first grouped the images and th
 Next, we randomly selected 80% of the groups to form the training set, ensuring that the images within each group (representing the same area) are kept together in the training set. The remaining 20% of the groups were designated for the validation set. This method helps maintain the temporal relationship between images in each group while dividing the data into training and validation sets.
 
 ```Mean per channel: [119.68150329589844, 117.33367919921875, 127.63949584960938, 129.77781677246094, 124.62456512451172, 125.06695556640625, 124.95356750488281, 125.3196792602539, 124.92810821533203, 122.48779296875, 10.059982299804688, 124.89237976074219, 125.14395904541016, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
 Std per channel: [71.22357940673828, 72.63861083984375, 78.41352081298828, 72.97818756103516, 76.74971008300781, 75.35397338867188, 75.2880859375, 75.13275909423828, 75.24949645996094, 76.35897827148438, 2.174912452697754, 75.01387023925781, 76.76856231689453, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 Overall Mean: 79.0478744506836
 Overall Std: 84.19537353515625
