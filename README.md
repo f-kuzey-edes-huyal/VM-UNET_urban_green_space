@@ -244,6 +244,8 @@ While the model still has room for improvement, at least it is showing some lear
 
 __February 25 2025__
 
+The cleaning process involves several key steps to ensure the satellite images and their corresponding masks are valid and contain meaningful data. First, the images and masks are validated by checking their shape, ensuring they have the correct number of channels (19 for images and 5 for masks). We also ensure that no NaN values are present, and discard any images or masks that are completely black or lack sufficient content, determined by a minimum content threshold (set at 1% pixel intensity). Additionally, we check for excessive noise or corruption by ensuring that the images and masks do not contain anomalies like missing data or pixels that are all zeros. Only images and masks that pass these checks are saved to a new folder, ensuring a cleaner dataset for further processing and model training.
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
