@@ -246,6 +246,10 @@ __February 25 2025__
 
 The cleaning process involves several key steps to ensure the satellite images and their corresponding masks are valid and contain meaningful data. First, the images and masks are validated by checking their shape, ensuring they have the correct number of channels (19 for images and 5 for masks). We also ensure that no NaN values are present, and discard any images or masks that are completely black or lack sufficient content, determined by a minimum content threshold (set at 1% pixel intensity). Additionally, we check for excessive noise or corruption by ensuring that the images and masks do not contain anomalies like missing data or pixels that are all zeros. Only images and masks that pass these checks are saved to a new folder, ensuring a cleaner dataset for further processing and model training.
 
+To separate the training and validation sets, we first grouped the images and their corresponding masks by their common identifier (e.g., "VBWVA_2016_0"). This grouping ensures that images taken from the same area but at different time points (such as "VBWVA_2016_0_1_GeoTIFF", "VBWVA_2016_0_2_GeoTIFF", and "VBWVA_2016_0_3_GeoTIFF") are treated as a single unit, preserving the temporal correlation between the images.
+
+Next, we randomly selected 80% of the groups to form the training set, ensuring that the images within each group (representing the same area) are kept together in the training set. The remaining 20% of the groups were designated for the validation set. This method helps maintain the temporal relationship between images in each group while dividing the data into training and validation sets.
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
