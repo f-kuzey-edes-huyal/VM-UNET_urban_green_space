@@ -242,6 +242,8 @@ Confusion Matrix: [[ 2992 3664] [12658 13454]]
 
 While the model still has room for improvement, at least it is showing some learning behavior. Given these findings, I was wondering if there might be an issue with the dataset itself.
 
+__February 25 2025__
+
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
