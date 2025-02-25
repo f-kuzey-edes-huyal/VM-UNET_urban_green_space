@@ -259,6 +259,12 @@ Overall Std: 84.19537353515625
 
 ```
 
+Trees versus all
+
+100%|█████████████████████████████████████████████████████████████████████████████████| 194/194 [00:12<00:00, 15.80it/s]Confusion Matrix:
+ [[  56340  159758]
+ [ 738284 2224114]]
+Test Results -> Mean IoU: 0.7124, Mean F1 Score: 0.8320, Mean Accuracy: 0.7175, Mean Specificity: 0.2607, Mean Sensitivity: 0.7508
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
