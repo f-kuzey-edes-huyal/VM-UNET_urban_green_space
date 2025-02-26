@@ -284,7 +284,9 @@ Std per channel: [255.5467529296875, 504.3299560546875, 499.6480712890625, 602.7
 Overall Mean: 1543.8436279296875
 Overall Std: 885.42529296875
 ```
-Confusion Matrix:
+__Initial three channel with pre-trained VMamba weights__
+
+```Confusion Matrix:
  [[ 3828  5772]
  [10844 16420]]
 Test Results -> Mean IoU: 0.4970, Mean F1 Score: 0.6640, Mean Accuracy: 0.5493, Mean Specificity: 0.3987, Mean Sensitivity: 0.6023
@@ -298,6 +300,7 @@ Confusion Matrix:
  [[ 3587  5117]
  [11987 16173]]
 Test Results -> Mean IoU: 0.4860, Mean F1 Score: 0.6541, Mean Accuracy: 0.5360, Mean Specificity: 0.4121, Mean Sensitivity: 0.5743
+```
 
 
 ## Notes
