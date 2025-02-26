@@ -361,6 +361,7 @@ Test Results -> Mean IoU: 0.4653, Mean F1 Score: 0.6351, Mean Accuracy: 0.5244, 
 ```
 
 12 channel used
+
 ```Confusion Matrix:
  [[ 3966  5570]
  [11895 15433]]
