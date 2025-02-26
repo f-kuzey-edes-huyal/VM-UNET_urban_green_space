@@ -303,6 +303,12 @@ Confusion Matrix:
  [[ 3587  5117]
  [11987 16173]]
 Test Results -> Mean IoU: 0.4860, Mean F1 Score: 0.6541, Mean Accuracy: 0.5360, Mean Specificity: 0.4121, Mean Sensitivity: 0.5743
+
+Images and masks for index 0 saved successfully as both TIFF and PNG.
+100%|███████████████████████████████████████████████████████| 9/9 [00:00<00:00, 10.39it/s]Confusion Matrix:
+ [[ 4069  5467]
+ [12067 15261]]
+Test Results -> Mean IoU: 0.4653, Mean F1 Score: 0.6351, Mean Accuracy: 0.5244, Mean Specificity: 0.4267, Mean Sensitivity: 0.5584
 ```
 
 
