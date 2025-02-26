@@ -342,7 +342,7 @@ Test Results -> Mean IoU: 0.4653, Mean F1 Score: 0.6351, Mean Accuracy: 0.5244, 
 Test Results -> Mean IoU: 0.4691, Mean F1 Score: 0.6386, Mean Accuracy: 0.5262, Mean Specificity: 0.4159, Mean Sensitivity: 0.5647
 ```
 
-I had a meeting with Aany Sofia related to applying PCA for reducing channel size to use with pretrained weights. I will try it. I love talking with her! ❤️❤️❤️
+I had a meeting with Aany Sofia related to applying [PCA](https://towardsdatascience.com/dimensionality-reduction-of-a-color-photo-splitting-into-rgb-channels-using-pca-algorithm-in-python-ba01580a1118/) for reducing channel size to use with pretrained weights. I will try it. I love talking with her! ❤️❤️❤️
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
