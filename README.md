@@ -321,10 +321,11 @@ Test Results -> Mean IoU: 0.4653, Mean F1 Score: 0.6351, Mean Accuracy: 0.5244, 
 ```
 
 12 channel used
-Confusion Matrix:
+```Confusion Matrix:
  [[ 3966  5570]
  [11895 15433]]
 Test Results -> Mean IoU: 0.4691, Mean F1 Score: 0.6386, Mean Accuracy: 0.5262, Mean Specificity: 0.4159, Mean Sensitivity: 0.5647
+```
 
 ## Notes
 
