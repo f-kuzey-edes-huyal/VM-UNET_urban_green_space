@@ -291,10 +291,19 @@ __Initial three channel with pre-trained VMamba weights__
 
 0 vs all
 
+
+
 ```Confusion Matrix:
  [[ 3828  5772]
  [10844 16420]]
 Test Results -> Mean IoU: 0.4970, Mean F1 Score: 0.6640, Mean Accuracy: 0.5493, Mean Specificity: 0.3987, Mean Sensitivity: 0.6023
+
+12 channel
+
+Confusion Matrix:
+ [[ 4117  5483]
+ [11925 15339]]
+Test Results -> Mean IoU: 0.4684, Mean F1 Score: 0.6380, Mean Accuracy: 0.5278, Mean Specificity: 0.4289, Mean Sensitivity: 0.5626
 
 1 vs all
 
