@@ -349,7 +349,11 @@ Test Results -> Mean IoU: 0.4860, Mean F1 Score: 0.6541, Mean Accuracy: 0.5360, 
  [11921 16239]]
 Test Results -> Mean IoU: 0.4873, Mean F1 Score: 0.6553, Mean Accuracy: 0.5366, Mean Specificity: 0.4069, Mean Sensitivity: 0.5767
 ```
-
+PCA
+Confusion Matrix:
+ [[ 3789  4915]
+ [12702 15458]]
+Test Results -> Mean IoU: 0.4674, Mean F1 Score: 0.6370, Mean Accuracy: 0.5221, Mean Specificity: 0.4353, Mean Sensitivity: 0.5489
 
 3 vs all
 
