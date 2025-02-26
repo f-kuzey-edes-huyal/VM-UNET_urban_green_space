@@ -289,28 +289,42 @@ __February 26 2034__
 
 __Initial three channel with pre-trained VMamba weights__
 
+0 vs all
+
 ```Confusion Matrix:
  [[ 3828  5772]
  [10844 16420]]
 Test Results -> Mean IoU: 0.4970, Mean F1 Score: 0.6640, Mean Accuracy: 0.5493, Mean Specificity: 0.3987, Mean Sensitivity: 0.6023
+
+1 vs all
 
 Confusion Matrix:
  [[ 3935  4833]
  [12209 15887]]
 Test Results -> Mean IoU: 0.4825, Mean F1 Score: 0.6509, Mean Accuracy: 0.5377, Mean Specificity: 0.4488, Mean Sensitivity: 0.5655
 
+2 vs all
+
 Confusion Matrix:
  [[ 3587  5117]
  [11987 16173]]
 Test Results -> Mean IoU: 0.4860, Mean F1 Score: 0.6541, Mean Accuracy: 0.5360, Mean Specificity: 0.4121, Mean Sensitivity: 0.5743
 
-Images and masks for index 0 saved successfully as both TIFF and PNG.
-100%|███████████████████████████████████████████████████████| 9/9 [00:00<00:00, 10.39it/s]Confusion Matrix:
+
+3 vs all
+
+3 chaanel used
+]Confusion Matrix:
  [[ 4069  5467]
  [12067 15261]]
 Test Results -> Mean IoU: 0.4653, Mean F1 Score: 0.6351, Mean Accuracy: 0.5244, Mean Specificity: 0.4267, Mean Sensitivity: 0.5584
 ```
 
+12 channel used
+Confusion Matrix:
+ [[ 3966  5570]
+ [11895 15433]]
+Test Results -> Mean IoU: 0.4691, Mean F1 Score: 0.6386, Mean Accuracy: 0.5262, Mean Specificity: 0.4159, Mean Sensitivity: 0.5647
 
 ## Notes
 
