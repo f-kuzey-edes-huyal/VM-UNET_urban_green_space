@@ -310,6 +310,14 @@ Confusion Matrix:
  [11987 16173]]
 Test Results -> Mean IoU: 0.4860, Mean F1 Score: 0.6541, Mean Accuracy: 0.5360, Mean Specificity: 0.4121, Mean Sensitivity: 0.5743
 
+12 channel used
+
+```Confusion Matrix:
+ [[ 3542  5162]
+ [11921 16239]]
+Test Results -> Mean IoU: 0.4873, Mean F1 Score: 0.6553, Mean Accuracy: 0.5366, Mean Specificity: 0.4069, Mean Sensitivity: 0.5767
+```
+
 
 3 vs all
 
