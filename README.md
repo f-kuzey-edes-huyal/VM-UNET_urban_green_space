@@ -286,8 +286,10 @@ Overall Std: 885.42529296875
 
 
 __February 26 2034__
+36 training images with 64*64 height*width.
 
 __Initial three channel with pre-trained VMamba weights__
+
 
 0 vs all
 
