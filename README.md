@@ -371,7 +371,12 @@ Test Results -> Mean IoU: 0.4653, Mean F1 Score: 0.6351, Mean Accuracy: 0.5244, 
  [11895 15433]]
 Test Results -> Mean IoU: 0.4691, Mean F1 Score: 0.6386, Mean Accuracy: 0.5262, Mean Specificity: 0.4159, Mean Sensitivity: 0.5647
 ```
+PCA 
 
+Confusion Matrix:
+ [[ 4149  5387]
+ [12299 15029]]
+Test Results -> Mean IoU: 0.4594, Mean F1 Score: 0.6296, Mean Accuracy: 0.5202, Mean Specificity: 0.4351, Mean Sensitivity: 0.5499
 I had a meeting with Aany Sofia related to applying [PCA](https://towardsdatascience.com/dimensionality-reduction-of-a-color-photo-splitting-into-rgb-channels-using-pca-algorithm-in-python-ba01580a1118/) for reducing channel size to use with pretrained weights. I will try it. I love talking with her! ❤️❤️❤️
 ## Notes
 
