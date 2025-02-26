@@ -294,6 +294,11 @@ Confusion Matrix:
  [12209 15887]]
 Test Results -> Mean IoU: 0.4825, Mean F1 Score: 0.6509, Mean Accuracy: 0.5377, Mean Specificity: 0.4488, Mean Sensitivity: 0.5655
 
+Confusion Matrix:
+ [[ 3587  5117]
+ [11987 16173]]
+Test Results -> Mean IoU: 0.4860, Mean F1 Score: 0.6541, Mean Accuracy: 0.5360, Mean Specificity: 0.4121, Mean Sensitivity: 0.5743
+
 
 ## Notes
 
