@@ -378,6 +378,14 @@ Confusion Matrix:
  [12299 15029]]
 Test Results -> Mean IoU: 0.4594, Mean F1 Score: 0.6296, Mean Accuracy: 0.5202, Mean Specificity: 0.4351, Mean Sensitivity: 0.5499
 I had a meeting with Aany Sofia related to applying [PCA](https://towardsdatascience.com/dimensionality-reduction-of-a-color-photo-splitting-into-rgb-channels-using-pca-algorithm-in-python-ba01580a1118/) for reducing channel size to use with pretrained weights. I will try it. I love talking with her! ❤️❤️❤️
+
+__March 5, 2025__: I will be writing a blog post explaining some steps in the implementation of VM-UNet. Even though the results above seem poor, they were evaluated based on training with only 36 images.
+
+As we approach the end of the project, I noticed that some other team members faced issues where their architectures quickly plateaued and performed poorly with the provided data. One possible reason for this could be an incorrect CRS (Coordinate Reference System) projection.
+
+I remember the day when Dorothea sent me her code to download the data— a small error in CRS settings can have significant consequences. This highlights how crucial it is to ensure the correct CRS settings during annotation, as any mistake in projection can lead to issues down the line.
+
+Although I feel a bit upset about this, I have learned a lot throughout the process and had the opportunity to meet many wonderful people.
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
