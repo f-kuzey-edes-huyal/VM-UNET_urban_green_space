@@ -386,6 +386,8 @@ As we approach the end of the project, I noticed that some other team members fa
 I remember the day when Dorothea sent me her code to download the data— a small error in CRS settings can have significant consequences. This highlights how crucial it is to ensure the correct CRS settings during annotation, as any mistake in projection can lead to issues down the line.
 
 Although I feel a bit upset about this, I have learned a lot throughout the process and had the opportunity to meet many wonderful people.
+
+__March 6, 2025__ https://gitee.com/ttarrr/deep-unet-for-satellite-image-segmentation/tree/master
 ## Notes
 
 [An app to draw architectures ](https://app.diagrams.net/)
